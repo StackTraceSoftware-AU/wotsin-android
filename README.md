@@ -9,6 +9,16 @@ The application is independently developed and published on Google Play.
 
 **[Google Play](https://play.google.com/store/apps/details?id=com.stacktracesoftware.wotsin)** | **[Technical Case Study](https://stacktracesoftware.com/portfolio/wotsin.html)**
 
+## Screenshots
+
+<p align="center">
+  <img src="images/barcode-scanner.webp" width="170" alt="Wotsin barcode scanner">
+  <img src="images/barcode-results.webp" width="170" alt="Barcode lookup results">
+  <img src="images/ocr-scanner.webp" width="170" alt="OCR ingredient scanner">
+  <img src="images/ocr-results.webp" width="170" alt="OCR ingredient results">
+  <img src="images/alerts-selection.webp" width="170" alt="Configurable ingredient alerts">
+</p>
+
 ## Overview
 
 Wotsin supports two complementary methods of examining packaged food:
