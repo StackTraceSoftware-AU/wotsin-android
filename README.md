@@ -94,9 +94,9 @@ The application uses a locally stored product database prepared from a much larg
 ```mermaid
 flowchart TD
     A["Open Food Facts data dump"] --> B["MongoDB import"]
-    B --> C["Java export and transformation"]
+    B --> C["Java export, data reduction and transformation"]
     C --> D["SQLite database"]
-    D --> E["Data reduction and indexing"]
+    D --> E["Indexing"]
     E --> F["Optimised offline database"]
 ```
 
