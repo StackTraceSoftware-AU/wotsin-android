@@ -11,13 +11,21 @@ The application is independently developed and published on Google Play.
 
 ## Screenshots
 
+
+## Screenshots
+
 <p align="center">
-  <img src="images/barcode-scanner.webp" width="170" alt="Wotsin barcode scanner">
-  <img src="images/barcode-results.webp" width="170" alt="Barcode lookup results">
-  <img src="images/ocr-scanner.webp" width="170" alt="OCR ingredient scanner">
-  <img src="images/ocr-results.webp" width="170" alt="OCR ingredient results">
-  <img src="images/alerts-selection.webp" width="170" alt="Configurable ingredient alerts">
+  <img src="images/barcode-scanner.webp" width="160" alt="Wotsin barcode scanner" style="border: 1px solid #ccc; border-radius: 8px;">
+  &nbsp;
+  <img src="images/barcode-results.webp" width="160" alt="Barcode lookup results" style="border: 1px solid #ccc; border-radius: 8px;">
+  &nbsp;
+  <img src="images/ocr-scanner.webp" width="160" alt="OCR ingredient scanner" style="border: 1px solid #ccc; border-radius: 8px;">
+  &nbsp;
+  <img src="images/ocr-results.webp" width="160" alt="OCR ingredient results" style="border: 1px solid #ccc; border-radius: 8px;">
+  &nbsp;
+  <img src="images/alerts-selection.webp" width="160" alt="Configurable ingredient alerts" style="border: 1px solid #ccc; border-radius: 8px;">
 </p>
+
 
 ## Overview
 
