@@ -73,11 +73,25 @@ Image preprocessing using OpenCV helped improve OCR performance when working wit
 
 The OCR capture interface is optimised to reduce camera shake and greatly improve the accuracy of the scanned text.
 
-### 4. Configurable Alerts
+### 4. Configurable Alerts and Text Matching
 
-Wotsin maintains a configurable list of substances that users may wish to investigate.
+Wotsin maintains a reference database of ingredients and additives
+of interest. Each entry includes a commonly used name, an EU additive
+number where applicable, and known alternative names or aliases.
 
-Users can enable or disable individual alerts, view explanatory information and access further research through their preferred browser or search engine.
+For example, Sodium Nitrate is also identified by its E-number,
+E251, and alternative names.
+
+The application matches ingredient text obtained from either the
+Products database or OCR against the user's enabled alerts.
+
+Matching terms are displayed with red underlining and yellow
+highlighting in the ingredient list.
+
+Tapping a highlighted term opens the corresponding Alerts database
+entry, where users can read additional information. A Research button
+opens a web browser and searches for further information about
+the substance.
 
 ### 5. Offline Operation
 
