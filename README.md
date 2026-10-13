@@ -83,6 +83,49 @@ Users can enable or disable individual alerts, view explanatory information and 
 
 The local database and on-device processing approach allow core functionality to remain available without a network connection.
 
+
+## Architecture
+
+### Offline Database Preparation
+
+The application uses a locally stored product database prepared from a much larger Open Food Facts dataset.
+
+
+```mermaid
+flowchart TD
+    A["Open Food Facts data dump"] --> B["MongoDB import"]
+    B --> C["Java export and transformation"]
+    C --> D["SQLite database"]
+    D --> E["Data reduction and indexing"]
+    E --> F["Optimised offline database"]
+```
+
+
+### Android Application
+
+Wotsin combines barcode-based product lookup with OCR-based ingredient recognition. Both methods support the application's ingredient and additive alert functionality.
+
+```mermaid
+flowchart TD
+    A["Wotsin Android App"]
+
+    A --> B["Barcode scanning"]
+    A --> C["OCR scanning"]
+
+    B --> D["Offline SQLite product lookup"]
+
+    C --> E["Image preprocessing<br/>OpenCV"]
+    E --> F["Text recognition"]
+
+    D --> G["Ingredient and additive analysis"]
+    F --> G
+
+    H["User-configured alert preferences"] --> G
+
+    G --> I["Results and highlighted substances"]
+```
+
+
 ## Additional Features
 
 - Product search and scanning history
