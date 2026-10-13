@@ -107,22 +107,20 @@ Wotsin combines barcode-based product lookup with OCR-based ingredient recogniti
 
 ```mermaid
 flowchart TD
-    A["Wotsin Android App"]
+    A["Barcode scanner"] --> B["Products database"]
+    C["OCR scanner"] --> D["OpenCV preprocessing"]
+    D --> E["Text recognition"]
 
-    A --> B["Barcode scanning"]
-    A --> C["OCR scanning"]
+    B --> F["Ingredient text"]
+    E --> F
 
-    B --> D["Offline SQLite product lookup"]
+    G["Alerts database: names, E-numbers and aliases"] --> H["Text matching"]
+    I["User alert preferences"] --> H
+    F --> H
 
-    C --> E["Image preprocessing<br/>OpenCV"]
-    E --> F["Text recognition"]
-
-    D --> G["Ingredient and additive analysis"]
-    F --> G
-
-    H["User-configured alert preferences"] --> G
-
-    G --> I["Results and highlighted substances"]
+    H --> J["Highlight matching words"]
+    J --> K["Tap word to view alert details"]
+    K --> L["Research button: browser search"]
 ```
 
 
