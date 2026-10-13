@@ -11,9 +11,6 @@ The application is independently developed and published on Google Play.
 
 ## Screenshots
 
-
-## Screenshots
-
 <p align="center">
   <img src="images/barcode-scanner.webp" width="160" alt="Wotsin barcode scanner" style="border: 1px solid #ccc; border-radius: 8px;">
   &nbsp;
